@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Searcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="search-container">
+        <h1>GitHub Profile Searcher</h1>
+        
+        <!-- Search Controls -->
+        <form id="search-form" class="search-form">
+            <input 
+                type="text" 
+                id="search-input" 
+                placeholder="Type a GitHub username (e.g., octocat)..." 
+                required 
+                autocomplete="off"
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Dynamic Feedback Areas -->
+        <div id="loader" class="loader hidden"></div>
+        <div id="error-message" class="error-card hidden">User not found</div>
+
+        <!-- Dynamic Output Container -->
+        <article id="profile-card" class="profile-card hidden">
+            <header class="profile-header">
+                <img id="profile-avatar" src="" alt="Profile Picture">
+                <div class="profile-meta">
+                    <h2 id="profile-name"></h2>
+                    <p id="profile-followers"></p>
+                </div>
+            </header>
+            
+            <p id="profile-bio" class="profile-bio"></p>
+
+            <section class="repos-section">
+                <h3>5 Most Recent Repositories</h3>
+                <ul id="repos-list" class="repos-list"></ul>
+            </section>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
