@@ -1,8 +1,8 @@
 # GitHub Profile Searcher
 A web application to search and display GitHub profiles using the public GitHub API.
-
+devyanshmehta/-github-profile-searcher
 ## Live Link
-[Insert your live Vercel/Netlify link here once generated]
+https://github-profile-searcher-fkooiezu1-ac-e2a9.vercel.app/
 
 ## How to Run Locally
 1. Clone or download this repository.
